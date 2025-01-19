@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+:root{
+   --cor01--: #0367A6;
+   --cor02--: #024873; 
+   --cor03--:#023859; 
+   --cor04--: #012840;
+   --cor05--:#048ABF; 
+    
+   --fonte01: 'Bebas';
+   --fonte03:'Passion' ;
+   --fonte04: 'PlayWrite';
+   --font03:'Sriracha'
+}
+
+@font-face {
+    font-family:Bebas;
+    src: url(fontes/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family:Passion;
+    src: url(fontes/Passion_One/PassionOne-Regular.ttf);
+}
+
+@font-face {
+    font-family:PlayWrite ;
+    src: url(fontes/Playwrite_VN/PlaywriteVN-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family:Sriracha ;
+    src: url(fontes/Sriracha/Sriracha-Regular.ttf);
+}
+
+
+body{
+    background-color: #ffffff;
+    min-height: 100vh;
+    margin: 0%;
+}
+
+header{
+    background-color: var(--cor02--) ;
+    color: aliceblue;
+    text-align: center;
+   
+}
+
+header > h1{
+    margin: 0;
+    font-family:Bebas ;
+    padding-top: 50px;
+    font-weight: lighter;
+}
+
+header > p{
+    color: aliceblue;
+    font-family: var(--fonte02);
+    font-size: 12px;
+    padding-bottom: 50px;
+   
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+header a:hover{
+    color: #012840;
+    text-decoration: underline;
+}
+
+body > h3{
+    font-family: Bebas;
+    font-weight: lighter;
+    padding-left: 5px;
+    color: white;
+    background: linear-gradient( to left, #0470b3a6,#0248737b );
+}
+
+
+section{
+    font-family:var(--fonte02);
+    background-color: azure;
+    padding-top: 2vh;
+    padding-bottom: 10vh ;
+    padding-left: 30px ;
+    line-height: 2em;
+}
+
+section.normal{
+    background-color: #ffffff;
+    color: black;
+}
+
+section.imagem{
+    background-color:#02487380;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    width: 300px;
+    border-radius: 2px;
+    padding-left: 5px;
+    background-color: #02385985; 
+    color: white;
+}
+
+section#img01{
+    background-image: url(imagens/img01.jpg);
+}
+
+section#img02{
+    background-image: url(imagens/img02.jpg);
+}
+
+
+footer{
+    background-color: var(--cor02--);
+    color: azure;
+    text-align: center;
+    padding: 3px;
+    margin: auto;
+}
+
+footer a:hover{
+    color: #012840;
+    text-decoration: underline;
+}
